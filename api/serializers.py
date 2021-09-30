@@ -7,7 +7,7 @@ from .models import Article
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['username','email','date_joined']
 
 
 class ArticleSerializer(serializers.ModelSerializer):
